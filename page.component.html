@@ -1,0 +1,10 @@
+<!-- Example page wiring parent → child -->
+<!-- selectedAccount is a property on the page component -->
+
+<app-parent-grid
+  (rowSelected)="selectedAccount = $event"
+/>
+
+<app-child-grid
+  [selectedAccount]="selectedAccount"
+/>
